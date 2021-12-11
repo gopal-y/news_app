@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #efe;
+  color: #3f8efe;
+}
+
+.news-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: #358efe;
+  border: 2px solid #358efe;
+  text-align: center;
+  text-decoration: none;
+}
+
+.scroll {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #3f8efe;
+  color: #3f8efe;
+  font-size: larger;
+  font-weight: bolder;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  margin: 10px 5px;
+  padding: 5px;
+  color: #358efe;
+  text-decoration: none;
+  font-variant-ligatures: common-ligatures;
+}
+
+.back:hover,
+.news-button:hover,
+.scroll:hover {
+  background: #358efe;
+  color: white;
+  box-shadow: 0 0 10px #358eae, 0 0 10px #358eae, 0 0 10px #358eae;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  width: 80%;
+  margin: 2% 10%;
+  overflow-x: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  color: #358efe;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  color: #358efe;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
